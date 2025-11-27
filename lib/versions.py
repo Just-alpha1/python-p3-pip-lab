@@ -2,11 +2,11 @@ import sys
 import requests
 import pytest
 
-def requests_version():
-    return "2.27.1"
-
 def python_version():
-    return "3.10.2"   
+    return sys.version_info
+
+def requests_version():
+    return requests.__version__
 
 def pytest_version():
-    return "7.1.3"
+    return pytest.__version__
